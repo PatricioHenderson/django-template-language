@@ -1,0 +1,18 @@
+{% extends "e-commerce/base.html" %}
+
+{% block title %}Wish List{% endblock %}
+
+{% block content %}
+
+<h1>Hola , {{user.username}}, los items en tu wish list son los siguientes</h1>
+ <div id="content">
+    <table class="table">
+        {% for item in WishList %}
+        <li>{{item.id}}</li>
+        {% endfor %}
+
+    </table>
+    
+</div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "e-commerce/base.html" %}
+
+{% block title %}Agradecimiento{% endblock %}
+
+{% block content %}
+
+<h1>Agradecemos su compra {{user.username}}</h1>
+ <div id="content">
+    <a href="{% url 'base' %}">Hacer click acá para volver al inicio </a>
+    
+</div>
+
+{% endblock %}
